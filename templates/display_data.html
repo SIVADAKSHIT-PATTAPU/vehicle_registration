@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Data</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1><a href="{{ url_for('index') }}">Vehicle Registration System</a></h1>
+  <p><a href="{{ url_for('index') }}" style="text-decoration:none;color:#004080;">&larr; Back to Home</a></p>
+<section>
+    <h2>Display Data</h2>
+    <input type="text" id="displayOfficeId" placeholder="Office ID">
+    <button onclick="fetchOwners()">Show Owners</button>
+    <button onclick="fetchVehicles()">Show Vehicles</button>
+    <div id="results"></div>
+  </section>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

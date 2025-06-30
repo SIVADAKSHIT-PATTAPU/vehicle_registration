@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Transport Office</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1><a href="{{ url_for('index') }}">Vehicle Registration System</a></h1>
+  <p><a href="{{ url_for('index') }}" style="text-decoration:none;color:#004080;">&larr; Back to Home</a></p>
+<section>
+    <h2>Add Transport Office</h2>
+    <form id="officeForm">
+      <input type="text" name="office_id" placeholder="Office ID" required>
+      <input type="text" name="office_name" placeholder="Office Name" required>
+      <button type="submit">Add Office</button>
+    </form>
+  </section>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
